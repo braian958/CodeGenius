@@ -1,0 +1,34 @@
+body {
+    background: linear-gradient(black, rgb(245, 124, 3), black);
+}
+
+.video h1 {
+    text-align: center;
+    color: white;
+}
+
+.video iframe {
+    margin-left: 250px;
+    margin-top: 10px;
+    height: 500px;
+    width: 1000px;
+}
+
+.video {
+    height: 700px;
+}
+
+#boton1 {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 700px;
+    cursor: pointer;
+}
+
+
+
+
