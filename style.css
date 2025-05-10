@@ -2,9 +2,12 @@
     margin: 0%;
 }
 
+body{
+    background: lightblue;
+}
+
 html{
     scroll-behavior: smooth;
-    padding-right: 40px;
 }
 
 .navegador {
@@ -106,12 +109,12 @@ ul:hover a:hover {
 }
 
 .info {
-    background: linear-gradient(rgb(0, 57, 137), black);
     height: 750px;
     display: flex;
-    background-image: url(/img/hoal2.jpg) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.397)), url(/img/fon3.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .imagen {
@@ -165,20 +168,33 @@ ul:hover a:hover {
     border: solid rgb(255, 0, 0);
     border-radius: 5px;
     cursor: pointer;
+    animation: flotar 3s ease-in-out infinite;;
 }
+
+@keyframes flotar {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
 
  
 .txt b {        
+    width: 180px;
+    text-wrap: nowrap;
     font-size: 30px;
     margin-left: 10px;
     overflow: hidden;
-    animation: typing 1.7s steps(50) infinite alternate;
+    animation: typing 3s steps(25) infinite alternate-reverse;
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    border-right: solid 2px white;
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 45%; }
-  }
+    from{ 
+        width: 0ch;
+    }
+}
   
 
 @keyframes subirt {
@@ -194,10 +210,22 @@ ul:hover a:hover {
 }
 
 .estudios {
-    background: linear-gradient(rgb(0, 0, 0), rgb(0, 34, 66));
-    height: 400px;
-    display: flex;
+    display:flex;
+    height: 1000px;
+    justify-content: center;
+    width: 190ch;
+    box-shadow: 20px 20px 10px gray;
+    animation: slider 10s linear infinite ;
+    gap: 40px;
+    box-shadow: 1px 1px 30px rgb(0, 58, 124);
+    background-repeat: no-repeat;
+    background-size: cover;       
+    background-position: center; 
+    background-image: url(/img/fondo1.jpg);
+    cursor: pointer;
 }
+
+   
 
 #boton1 {
     position: relative;
@@ -208,14 +236,14 @@ ul:hover a:hover {
     background: transparent;
     cursor: pointer;
     transition: ease-out 0.5s;
-    border: 2px solid #3c0000;
+    border: 2px solid #ffffff;
     border-radius: 10px;
-    box-shadow: inset 0 0 0 0 #ff0000;
+    background-color: rgb(255, 255, 255);
   }
   
   #boton1:hover {
-    color: white;
-    box-shadow: inset 0 -100px 0 0 #3c0000;
+    color: rgb(0, 0, 0);
+     box-shadow: 1px 1px 30px red;
   }
   
   #boton1:active {
@@ -223,24 +251,34 @@ ul:hover a:hover {
   }
    
 .html {
-    width: 200px;
-    height: 300px;
-    background: linear-gradient(black, rgb(255, 179, 131));
-    margin-left: 200px;
+    width: 220px;
+    height: 320px;
+    background-color: rgba(0, 0, 0, 0.767);
+    color: white;
     text-align: center;
+    border: solid 3px rgb(3, 40, 110);
     padding: 5px;
     border-radius: 20px;
-    margin-top: 130px;
+    margin-top: 250px;
     transition: transform 0.7s;
     animation: apah linear both;
     animation-timeline: view();
     animation-range: entry 5% cover 30%;
-    box-shadow: 0px 0px 50px rgb(0, 89, 255);
+    box-shadow: 5px 5px 70px rgb(0, 89, 255);
+    animation: card 3s ease-in-out infinite;
 }
+
+@keyframes card {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
 
 .html:hover {
     transform: scale(1.10);
     box-shadow: rgb(255, 255, 255);
+    animation-play-state: paused;
 }
 
 @keyframes apah {
@@ -267,31 +305,42 @@ ul:hover a:hover {
 }
 
 .imghtml {
-    width: 150px;
+    width: 250px;
     height: 120px;
     margin-top: 15px;
+    margin-right: 80px;
+    
 }
 
 .css {
-    width: 200px;
-    height: 300px;
-    background: linear-gradient(black, rgb(0, 81, 187));
-    margin-left: 200px;
+      width: 220px;
+    height: 320px;
+      background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    margin-left: 10px;
     text-align: center;
     padding: 5px;
     border-radius: 20px;
-    margin-left: 250px;
-    margin-top: 130px;
+    margin-top: 250px;
     transition: transform 0.7s;
     animation: apac linear both;
     animation-timeline: view();
     animation-range: entry 5% cover 30%;
     box-shadow: 0px 0px 50px rgb(0, 89, 255);
+     animation: card1 3s ease-in-out infinite;
 }
+
+@keyframes card1 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
 
 .css:hover {
     transform: scale(1.10);
     box-shadow: rgb(255, 255, 255);
+    animation-play-state: paused;
 }
 
 @keyframes apac {
@@ -323,25 +372,34 @@ ul:hover a:hover {
 }
 
 .js {
-    width: 200px;
-    height: 300px;
-    background: linear-gradient(black, rgb(255, 251, 15));
-    margin-left: 200px;
+      width: 220px;
+    height: 320px;
+      background-color: rgba(0, 0, 0, 0.758);
+    color: white;
     text-align: center;
     padding: 5px;
     border-radius: 20px;
-    margin-left: 250px;
-    margin-top: 130px;
+    margin-left: 10px;
+    margin-top: 250px;
     transition: transform 0.7s;
     animation: apaj linear both;
     animation-timeline: view();
     animation-range: entry 5% cover 30%;
     box-shadow: 0px 0px 50px rgb(0, 89, 255);
+     animation: card2 3s ease-in-out infinite;
 }
+
+@keyframes card2 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
 
 .js:hover {
     transform: scale(1.10);
     box-shadow: rgb(255, 255, 255);
+    animation-play-state: paused;
 }
 
 @keyframes apaj {
@@ -372,33 +430,35 @@ ul:hover a:hover {
     margin-top: 20px;
 }
 
-.bd {
-    display: flex;
-    background: linear-gradient(rgb(0, 34, 66), black);
-    height: 500px;
-}
-
 .sql {
-    width: 200px;
-    height: 300px;
-    background: linear-gradient(rgb(255, 162, 0), rgb(0, 104, 194));
-    margin-left: 200px;
+    width: 220px;
+    height: 320px;
+    background-color: rgba(0, 0, 0, 0.752);
+    color: white;
+    margin-left: 10px;
     text-align: center;
     padding: 5px;
     border-radius: 20px;
-    margin-left: 360px;
-    margin-top: 100px;
-    margin-top: 130px;
+    margin-top: 250px;
     transition: transform 0.7s;
     animation: apaq linear both;
     animation-timeline: view();
     animation-range: entry 5% cover 30%;
     box-shadow: 0px 0px 40px rgb(0, 89, 255);
+     animation: card3 3s ease-in-out infinite;
 }
+
+@keyframes card3 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
 
 .sql:hover {
     transform: scale(1.10);
     box-shadow: rgb(255, 255, 255);
+    animation-play-state: paused;
 }
 
 @keyframes apaq {
@@ -428,27 +488,34 @@ ul:hover a:hover {
 }
 
 .java {
-    width: 200px;
-    height: 300px;
-    background: linear-gradient(rgb(0, 80, 199), rgb(163, 98, 0));
-    margin-left: 200px;
+    width: 220px;
+    height: 320px;
+     background-color: rgba(0, 0, 0, 0.745);
+    color: white;
+    margin-left: 10px;
     text-align: center;
     padding: 5px;
     border-radius: 20px;
-    margin-left: 425px;
-    margin-top: 100px;
-    margin-right: 300px;
-    margin-top: 130px;
+    margin-top: 250px;
     transition: transform 0.7s;
     animation: apal linear both;
     animation-timeline: view();
     animation-range: entry 5% cover 30%;
     box-shadow: 0px 0px 50px rgb(0, 89, 255);
+     animation: card4 3s ease-in-out infinite;
 }
+
+@keyframes card4 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
 
 .java:hover {
     transform: scale(1.10);
     box-shadow: rgb(255, 255, 255);
+    animation-play-state: paused;
 }
 
 @keyframes apal {
@@ -473,7 +540,7 @@ ul:hover a:hover {
 .java button {
     width: 90px;
     height: 30px;
-    background-color: rgba(255, 255, 255, 0.229);
+    background-color: rgba(255, 0, 0, 0.229);
     cursor: pointer;
 }
 
@@ -484,47 +551,56 @@ ul:hover a:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 30px;
-    background: linear-gradient(black, rgb(0, 40, 99), black);
+    background-color: rgb(0, 0, 0);
 }
 
-.container .card {
+ .card {
     position: relative;
-    max-width: 300px;
-    height: 215px;
-    background: linear-gradient(black, rgb(0, 0, 110));
-    margin: 250px;
-    margin-left: 50px;
-    margin-right: 50px;
+    max-width: 250px;
+    height: 200px;
     padding: 20px 15px;
+    margin-top: 250px;
+    margin-bottom: 300px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 202px rgba(0, 0, 0, 0, 5);
     transition: 0.3s ease-in-out;
     font-family: cursive;
-    box-shadow: 0px 0px 30px rgb(255, 255, 255);
-    border-radius: 50px;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 30px rgb(0, 44, 119));
+    animation: flotar-i 3s ease-in-out infinite ;;
 }
+
+@keyframes flotar-i {
+    0% {transform: translateY(0); }
+    50%  { transform: translateY(-40px); }
+    100% { transform: translateY(0); }
+  }
+
 
 .container .card:hover {
-    height: 500px;
+    height: 550px;
+    border: solid 2px rgb(0, 27, 96) ;
+    box-shadow: 1px 1px 30px rgb(0, 0, 104);
+     animation-play-state: paused;
 }
 
-.container .card .imgBx {
+.imgBx {
     position: relative;
     width: 260px;
     height: 260px;
-    left: 20px;
+    left: 5px;
     z-index: 1;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 5);
 }
 
-.container .card .imgBx img {
+.imgBx img {
     max-width: 100%;
     border-radius: 4px;
+   
 }
 
-.container .card .content {
+.content {
     position: relative;
     text-align: center;
     color: #ffffff;
