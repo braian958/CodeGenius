@@ -2,11 +2,11 @@
     margin: 0%;
 }
 
-body{
+body {
     background: lightblue;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -18,19 +18,20 @@ html{
     background-color: #0000005b;
     padding: 10px 30px;
     border-radius: 10px;
-    
+    border-bottom: solid 2px rgb(255, 255, 255);
+
 }
 
- .navegador a {
+.navegador a {
     transition: font-size 0.3s ease;
     display: inline-block;
     white-space: nowrap;
-    
- }
+}
 
- .navegador a:hover {
+.navegador a:hover {
     font-size: 20px;
- }
+    border-bottom: solid 2px rgb(255, 0, 0);
+}
 
 .navegador ul {
     list-style: none;
@@ -38,12 +39,7 @@ html{
     padding: 0;
     display: flex;
     gap: 20px;
-    
-}
 
-a {
-    color: black;
-    
 }
 
 .navegador li {
@@ -51,8 +47,8 @@ a {
     font-weight: bold;
     opacity: 0;
     animation: abajo-hacia-arriba 4s ease forwards;
-    color: black;
-  
+    color: rgb(255, 0, 0);
+
 }
 
 
@@ -111,10 +107,10 @@ ul:hover a:hover {
 .info {
     height: 750px;
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.397)), url(/img/fon3.jpg) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.397)), url(/img/fon3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 .imagen {
@@ -168,17 +164,26 @@ ul:hover a:hover {
     border: solid rgb(255, 0, 0);
     border-radius: 5px;
     cursor: pointer;
-    animation: flotar 3s ease-in-out infinite;;
+    animation: flotar 3s ease-in-out infinite;
+    ;
 }
 
 @keyframes flotar {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-  }
+    0% {
+        transform: translateY(0);
+    }
 
- 
-.txt b {        
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.txt b {
     width: 180px;
     text-wrap: nowrap;
     font-size: 30px;
@@ -191,11 +196,11 @@ ul:hover a:hover {
 }
 
 @keyframes typing {
-    from{ 
+    from {
         width: 0ch;
     }
 }
-  
+
 
 @keyframes subirt {
     from {
@@ -210,22 +215,22 @@ ul:hover a:hover {
 }
 
 .estudios {
-    display:flex;
+    display: flex;
     height: 1000px;
     justify-content: center;
     width: 190ch;
     box-shadow: 20px 20px 10px gray;
-    animation: slider 10s linear infinite ;
+    animation: slider 10s linear infinite;
     gap: 40px;
     box-shadow: 1px 1px 30px rgb(0, 58, 124);
     background-repeat: no-repeat;
-    background-size: cover;       
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     background-image: url(/img/fondo1.jpg);
     cursor: pointer;
 }
 
-   
+
 
 #boton1 {
     position: relative;
@@ -239,17 +244,17 @@ ul:hover a:hover {
     border: 2px solid #ffffff;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-  }
-  
-  #boton1:hover {
+}
+
+#boton1:hover {
     color: rgb(0, 0, 0);
-     box-shadow: 1px 1px 30px red;
-  }
-  
-  #boton1:active {
+    box-shadow: 1px 1px 30px red;
+}
+
+#boton1:active {
     transform: scale(0.9);
-  }
-   
+}
+
 .html {
     width: 220px;
     height: 320px;
@@ -269,9 +274,17 @@ ul:hover a:hover {
 }
 
 @keyframes card {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 
@@ -309,13 +322,13 @@ ul:hover a:hover {
     height: 120px;
     margin-top: 15px;
     margin-right: 80px;
-    
+
 }
 
 .css {
-      width: 220px;
+    width: 220px;
     height: 320px;
-      background-color: rgba(0, 0, 0, 0.753);
+    background-color: rgba(0, 0, 0, 0.753);
     color: white;
     margin-left: 10px;
     text-align: center;
@@ -327,13 +340,21 @@ ul:hover a:hover {
     animation-timeline: view();
     animation-range: entry 5% cover 30%;
     box-shadow: 0px 0px 50px rgb(0, 89, 255);
-     animation: card1 3s ease-in-out infinite;
+    animation: card1 3s ease-in-out infinite;
 }
 
 @keyframes card1 {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 
@@ -372,9 +393,9 @@ ul:hover a:hover {
 }
 
 .js {
-      width: 220px;
+    width: 220px;
     height: 320px;
-      background-color: rgba(0, 0, 0, 0.758);
+    background-color: rgba(0, 0, 0, 0.758);
     color: white;
     text-align: center;
     padding: 5px;
@@ -386,13 +407,21 @@ ul:hover a:hover {
     animation-timeline: view();
     animation-range: entry 5% cover 30%;
     box-shadow: 0px 0px 50px rgb(0, 89, 255);
-     animation: card2 3s ease-in-out infinite;
+    animation: card2 3s ease-in-out infinite;
 }
 
 @keyframes card2 {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 
@@ -445,13 +474,21 @@ ul:hover a:hover {
     animation-timeline: view();
     animation-range: entry 5% cover 30%;
     box-shadow: 0px 0px 40px rgb(0, 89, 255);
-     animation: card3 3s ease-in-out infinite;
+    animation: card3 3s ease-in-out infinite;
 }
 
 @keyframes card3 {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 
@@ -490,7 +527,7 @@ ul:hover a:hover {
 .java {
     width: 220px;
     height: 320px;
-     background-color: rgba(0, 0, 0, 0.745);
+    background-color: rgba(0, 0, 0, 0.745);
     color: white;
     margin-left: 10px;
     text-align: center;
@@ -502,13 +539,21 @@ ul:hover a:hover {
     animation-timeline: view();
     animation-range: entry 5% cover 30%;
     box-shadow: 0px 0px 50px rgb(0, 89, 255);
-     animation: card4 3s ease-in-out infinite;
+    animation: card4 3s ease-in-out infinite;
 }
 
 @keyframes card4 {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 
@@ -554,7 +599,7 @@ ul:hover a:hover {
     background-color: rgb(0, 0, 0);
 }
 
- .card {
+.card {
     position: relative;
     max-width: 250px;
     height: 200px;
@@ -568,21 +613,30 @@ ul:hover a:hover {
     font-family: cursive;
     cursor: pointer;
     filter: drop-shadow(1px 1px 30px rgb(0, 44, 119));
-    animation: flotar-i 3s ease-in-out infinite ;;
+    animation: flotar-i 3s ease-in-out infinite;
+    ;
 }
 
 @keyframes flotar-i {
-    0% {transform: translateY(0); }
-    50%  { transform: translateY(-40px); }
-    100% { transform: translateY(0); }
-  }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 
 
 .container .card:hover {
     height: 550px;
-    border: solid 2px rgb(0, 27, 96) ;
+    border: solid 2px rgb(0, 27, 96);
     box-shadow: 1px 1px 30px rgb(0, 0, 104);
-     animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 .imgBx {
@@ -597,7 +651,7 @@ ul:hover a:hover {
 .imgBx img {
     max-width: 100%;
     border-radius: 4px;
-   
+
 }
 
 .content {
@@ -618,6 +672,204 @@ ul:hover a:hover {
 .imgBx img {
     width: 230px;
     margin-left: 20px;
+}
+
+.containert {
+    display: flex;
+    gap: 50px;
+    background-color: black;
+    height: 600px;
+}
+
+.imgt1 {
+    background-color: rgba(255, 255, 255, 0.566);
+    width: 250px;
+    height: 400px;
+    transform: rotate(10deg);
+    box-shadow: 1px 1px 30px rgb(0, 28, 104);
+    margin-left: 40px;
+    transition: all 0.5s ease;
+    opacity: .4;
+    filter: blur(4px);
+}
+
+
+.imgt1:hover {
+    opacity: 1;
+    filter: blur(0px);
+    transform: rotate(0deg);
+}
+
+.imgt1 h2 {
+    margin-left: 35px;
+    font-family:cursive;
+}
+
+.imgt1 p {
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    margin-top: 25px;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imgt2 {
+    background-color: rgba(255, 255, 255, 0.585);
+    width: 250px;
+    height: 400px;
+    transform: rotate(-5deg);
+    box-shadow: 1px 1px 30px rgb(0, 28, 104);
+    transition: all 0.5s ease;
+    opacity: .4;
+    filter: blur(4px);
+}
+
+.imgt2 h2 {
+    text-align: center;
+    font-family: cursive;
+}
+
+.imgt2 p {
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    margin-top: 25px;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imgt2:hover {
+    opacity: 1;
+    filter: blur(0px);
+    transform: rotate(0deg);
+}
+
+.imgt3 {
+    background-color: rgba(255, 255, 255, 0.484);
+    width: 250px;
+    height: 400px;
+    transform: rotate(3deg);
+    box-shadow: 1px 1px 30px rgb(0, 28, 104);
+    transition: all 0.5s ease;
+    opacity: .4;
+    filter: blur(4px);
+}
+
+.imgt3 h2 {
+    text-align: center;
+    font-family: cursive;
+}
+
+.imgt3 p {
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    margin-top: 15px;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.imgt3:hover {
+    opacity: 1;
+    filter: blur(0px);
+    transform: rotate(0deg);
+}
+
+.imgt4 {
+    background-color: rgba(255, 255, 255, 0.415);
+    width: 250px;
+    height: 400px;
+    transform: rotate(10deg);
+    box-shadow: 1px 1px 30px rgb(0, 28, 104);
+    transition: all 0.5s ease;
+    opacity: .4;
+    filter: blur(4px);
+}
+
+.imgt4 h2 {
+    text-align: center;
+    font-family: cursive;
+}
+
+.imgt4 p {
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    margin-top: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.imgt4:hover {
+    opacity: 1;
+    filter: blur(0px);
+    transform: rotate(0deg);
+}
+
+.imgt5 {
+    background-color: rgba(255, 255, 255, 0.374);
+    width: 250px;
+    height: 400px;
+    transform: rotate(-5deg);
+    box-shadow: 1px 1px 30px rgb(0, 28, 104);
+    transition: all 0.5s ease;
+    opacity: .4;
+    filter: blur(4px);
+}
+
+.imgt5 h2 {
+    text-align: center;
+    font-family: cursive;
+}
+
+.imgt5 p {
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    margin-top: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imgt5:hover {
+    opacity: 1;
+    filter: blur(0px);
+    transform: rotate(0deg);
+}
+
+.imgt1 img {
+    height: 170px;
+    margin-left: 25px;
+    width: 200px;
+
+
+}
+
+.imgt2 img {
+    height: 170px;
+    width: 200px;
+    margin-left: 25px;
+    margin-top: 20px;
+
+}
+
+.imgt3 img {
+    height: 170px;
+    width: 200px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.imgt4 img {
+    height: 130px;
+    width: 180px;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.imgt5 img {
+    height: 170px;
+    width: 200px;
+    margin-left: 25px;
+    margin-top: 20px;
 }
 
 .footer {
