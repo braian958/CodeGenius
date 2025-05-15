@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(black, rgb(245, 124, 3), black);
+    background: linear-gradient(black, rgb(0, 54, 125), black);
 }
 
 .video h1 {
@@ -27,8 +27,5 @@ body {
     margin-top: 20px;
     margin-left: 700px;
     cursor: pointer;
+    border: solid 1px white;
 }
-
-
-
-
