@@ -8,15 +8,14 @@ body {
 }
 
 .video iframe {
-    margin-left: 10px;
     margin-top: 10px;
     height: 500px;
     width: 1000px;
 }
 
 .video p {
-   text-align: end;
-       
+    text-align: end;
+
 }
 
 .txt {
@@ -26,19 +25,47 @@ body {
 }
 
 .video {
-    height: 700px;
-    
+    height: 1000px;
+
 }
 
-#boton1 {
-    background-color: black;
+#boton {
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     border-radius: 100px;
     height: 40px;
     width: 150px;
     margin-top: 20px;
-    margin-left: 700px;
     cursor: pointer;
+}
+
+.video img {
+    justify-items: start;
+    height: 20px;
+}
+
+.video img:hover {
+    transform: scale(1.2);
+}
+
+details {
+    margin-top: 20px;
+    margin-left: 400px;
+    width: 100px;
+}
+
+summary {
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 200px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+    list-style: none;
+    text-align: center;
+    
 }
 
 

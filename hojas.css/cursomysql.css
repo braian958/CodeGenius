@@ -29,3 +29,11 @@ body {
     cursor: pointer;
 }
 
+.video img {
+    justify-items: start;
+    height: 20px ;
+}
+
+.video img:hover {
+    transform: scale(1.2);
+}
