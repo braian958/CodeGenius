@@ -2,7 +2,7 @@ body {
   background-color: #10110f;
   color: white;
   font-family: 'Roboto', sans-serif;
-  background-image: url(/img/paisaje.avif);
+  background-image: url(/img/fondoinicio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -108,4 +108,10 @@ h1 {
   background-color: #ffffff;
   padding: 0 4px;
 }
+
+.olvido {
+  color: blue;
+  text-align: center;
+  margin-top: 20px;
+}	
 
