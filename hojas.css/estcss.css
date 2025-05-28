@@ -2,72 +2,179 @@ body {
     background: linear-gradient(black, rgb(245, 124, 3), black);
 }
 
-.video h1 {
-    text-align: center;
+.abrir-modal {
+    background-color: #ff6600;
     color: white;
-}
-
-.video iframe {
-    margin-top: 10px;
-    height: 500px;
-    width: 1000px;
-}
-
-.video p {
-    text-align: end;
-
-}
-
-.txt {
-    background-color: white;
-    color: black;
-    width: 700px;
-}
-
-.video {
-    height: 1000px;
-
-}
-
-#boton {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border-radius: 100px;
-    height: 40px;
-    width: 150px;
-    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
     cursor: pointer;
+    border-radius: 5px;
+    margin: 20px;
+    display: inline-block;
+}
+
+#modal-toggle:checked~.modal {
+    display: flex;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-contenido {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    height: 80vh;
+    overflow: hidden;
+}
+
+.cerrar-modal {
+    top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+    
+.video h1,
+.video1 h2,
+.video2 h2,
+.video3 h2,
+.video4 h2,
+.video5 h2,
+.video6 h2,
+.video7 h2,
+.video8 h2,
+.video9 h2 {
+  text-align: center;
+  color: white;
+}
+
+/* Animación base */
+@keyframes fadeInArriba {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.video,
+.video1,
+.video2,
+.video3,
+.video4,
+.video5,
+.video6,
+.video7,
+.video8,
+.video9 {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInArriba 1s ease-out forwards;
+}
+
+
+.video { animation-delay: 0s; }
+.video1 { animation-delay: 1s; }
+.video2 { animation-delay: 2s; }
+.video3 { animation-delay: 3s; }
+.video4 { animation-delay: 4s; }
+.video5 { animation-delay: 5s; }
+.video6 { animation-delay: 6s; }
+.video7 { animation-delay: 7s; }
+.video8 { animation-delay: 8s; }
+.video9 { animation-delay: 9s; }
+
+.video iframe,
+.video1 iframe,
+.video2 iframe,
+.video3 iframe,
+.video4 iframe,
+.video5 iframe,
+.video6 iframe,
+.video7 iframe,
+.video8 iframe,
+.video9 iframe {
+  margin-top: 10px;
+  height: 500px;
+  width: 1000px;
+  margin-left: 250px;
+}
+
+.video{
+    height: 1000px;
+}
+
+.video1,
+.video2,
+.video3,
+.video4,
+.video5,
+.video6,
+.video7,
+.video8,
+.video9 {
+  height: 1000px;
 }
 
 .video img {
-    justify-items: start;
-    height: 20px;
+  justify-items: start;
+  height: 20px;
 }
 
 .video img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
+
 details {
-    margin-top: 20px;
-    margin-left: 400px;
-    width: 100px;
+  margin-top: 20px;
+  margin-left: 250px;
+  width: 100px;
+  opacity: 0;
+  animation: aparicion 0.8s ease-out forwards;
+  animation-delay: 20s;
+}
+
+@keyframes aparicion {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 summary {
-    font-size: 18px;
-    padding: 10px 20px;
-    width: 200px;
-    background-color: #000000;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    user-select: none;
-    list-style: none;
-    text-align: center;
-    
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 200px;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  user-select: none;
+  list-style: none;
+  text-align: center;
 }
-
-
-
-
