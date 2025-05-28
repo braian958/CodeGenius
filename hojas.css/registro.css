@@ -11,6 +11,15 @@ body {
     
   }
 
+  #retroceder img {
+    justify-items: start;
+    height: 20px ;
+}
+
+#retroceder img:hover {
+    transform: scale(1.2);
+}
+
   .contenedor-formulario {
     display: flex;
     align-items: center;

@@ -11,6 +11,15 @@ body {
   filter: blur(4px);
 }
 
+#retroceder img {
+    justify-items: start;
+    height: 20px ;
+}
+
+#retroceder img:hover {
+    transform: scale(1.2);
+}
+
 .formulario {
   border-radius: 10px;
   background-color: #ffffff5b;
