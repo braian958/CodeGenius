@@ -142,13 +142,13 @@ ul:hover a:hover {
 .txt h1 {
     color: white;
     width: 20ch;
-    margin-left: 600px;
+    margin-left: 380px;
 }
 
 .txt p {
     margin-right: 100px;
     color: white;
-    margin-left: 480px;
+    margin-left: 250px;
     width: 600px;
     font-size: 15px;
     text-align: center;
@@ -156,7 +156,7 @@ ul:hover a:hover {
 
 .txt button {
     margin-top: 50px;
-    margin-left: 750px;
+    margin-left: 530px;
     height: 35px;
     background-color: red;
     color: white;
@@ -871,6 +871,12 @@ ul:hover a:hover {
     margin-left: 25px;
     margin-top: 20px;
 }
+
+#imagenlogo {
+    justify-items: start;
+    height: 50px ;
+}
+
 
 .carde {
     margin-top: 300px;
